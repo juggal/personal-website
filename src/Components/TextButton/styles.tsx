@@ -1,13 +1,13 @@
 import { Theme, createStyles } from "@material-ui/core";
 
-export const styles = ({ palette, typography }: Theme) =>
+export const styles = ({ palette, typography, spacing }: Theme) =>
   createStyles({
     button: {
       background: "none",
       border: `4px solid ${palette.primary.dark}`,
       borderRadius: "50px",
-      width: "145px",
-      height: "45px",
+      width: "146px",
+      height: "47px",
     },
     text: {
       color: palette.text.primary,
