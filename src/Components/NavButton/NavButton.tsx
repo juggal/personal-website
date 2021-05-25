@@ -5,18 +5,20 @@ import { styles } from "./styles";
 interface NavButtonProps extends WithStyles<typeof styles> {
   text: string;
   color: "default" | "primary";
+  onClick?: () => void;
 }
 
 export const NavButton = withStyles(styles)(
   class extends Component<NavButtonProps> {
     render(): ReactNode {
-      const { text, color, classes } = this.props;
+      const { text, color, classes, onClick } = this.props;
       return (
         <Button
           color={color}
           variant="text"
           size="large"
           classes={{ textSizeLarge: classes.buttonText }}
+          onClick={onClick}
         >
           {text}
         </Button>

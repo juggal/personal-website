@@ -5,5 +5,8 @@ export const styles = ({ typography }: Theme) =>
     buttonText: {
       fontSize: "28px",
       fontWeight: typography.fontWeightMedium,
+      "&:hover": {
+        background: "none",
+      },
     },
   });
