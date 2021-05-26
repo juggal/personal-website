@@ -6,14 +6,21 @@ interface SvgButtonProps extends WithStyles<typeof styles> {
   svg: any;
   onClick?: () => void;
   className?: string;
+  link: string;
 }
 
 export const SvgButton = withStyles(styles)(
   class extends Component<SvgButtonProps> {
     render(): ReactNode {
-      const { classes, svg, onClick, className } = this.props;
+      const { classes, svg, onClick, className, link } = this.props;
       return (
-        <IconButton onClick={onClick} size="small" className={className}>
+        <IconButton
+          onClick={onClick}
+          size="small"
+          className={className}
+          href={link}
+          target="_blank"
+        >
           <SvgIcon
             className={classes.root}
             component={svg}
