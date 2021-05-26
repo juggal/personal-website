@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./Views/Home/Home";
-import { Navbar } from "./Components/Navbar";
+import { Home } from "@views/Home";
+import { Navbar } from "@components/Navbar";
 import { theme } from "./utils";
 import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core";
 
