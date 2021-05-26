@@ -1,11 +1,5 @@
 import React, { Component, ReactNode } from "react";
-import {
-  Box,
-  LinearProgress,
-  Typography,
-  withStyles,
-  WithStyles,
-} from "@material-ui/core";
+import { LinearProgress, withStyles, WithStyles } from "@material-ui/core";
 import { styles } from "./styles";
 
 interface SkillBarItemProps extends WithStyles<typeof styles> {
