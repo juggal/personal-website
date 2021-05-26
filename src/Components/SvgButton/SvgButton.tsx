@@ -1,4 +1,4 @@
-import React, { Component, HTMLAttributes, ReactNode } from "react";
+import React, { Component, ReactNode } from "react";
 import { withStyles, WithStyles, SvgIcon, IconButton } from "@material-ui/core";
 import { styles } from "./styles";
 
