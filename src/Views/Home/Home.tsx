@@ -1,6 +1,6 @@
 import React, { Component, ReactNode } from "react";
-import { SvgButton } from "../../Components/SvgButton";
-import { ReactComponent as email } from "../../assets/svg/email.svg";
+import { SvgButton } from "@components/SvgButton";
+import { ReactComponent as email } from "@svg/down-arrow.svg";
 
 export default class Home extends Component {
   render(): ReactNode {
