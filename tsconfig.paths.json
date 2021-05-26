@@ -4,7 +4,9 @@
     "paths": {
       "@components/*": ["Components/*"],
       "@views/*": ["Views/*"],
-      "@svg/*": ["assets/svg/*"]
+      "@svg/*": ["assets/svg/*"],
+      "@ctypes": ["Types"],
+      "@mdata": ["mock"]
     }
   }
 }
