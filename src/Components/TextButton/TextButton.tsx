@@ -15,7 +15,7 @@ export const TextButton = withStyles(styles)(
       const { text, onClick, classes, type, link } = this.props;
       if (type === "submit") {
         return (
-          <Button onClick={onClick} className={classes.button}>
+          <Button onClick={onClick} className={classes.button} type="submit">
             <span className={classes.text}>{text}</span>
           </Button>
         );
