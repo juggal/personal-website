@@ -4,7 +4,8 @@ export const styles = ({ palette, spacing }: Theme) =>
   createStyles({
     navBackground: {
       background: palette.secondary.main,
-      height: spacing(10),
+      height: "100%",
+      width: "100%",
       "& div": {
         paddingRight: spacing(8),
       },
