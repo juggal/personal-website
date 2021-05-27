@@ -1,6 +1,4 @@
 import React from "react";
-import { Home } from "@views/Home";
-import { Navbar } from "@components/Navbar";
 import { theme } from "./utils";
 import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core";
 import { Main } from "@views/Main";
