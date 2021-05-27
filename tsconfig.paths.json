@@ -5,6 +5,7 @@
       "@components/*": ["Components/*"],
       "@views/*": ["Views/*"],
       "@svg/*": ["assets/svg/*"],
+      "@images/*": ["assets/images/*"],
       "@ctypes": ["Types"],
       "@mdata": ["mock"]
     }
