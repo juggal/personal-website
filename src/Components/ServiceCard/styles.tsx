@@ -3,8 +3,8 @@ import { createStyles, Theme } from "@material-ui/core";
 export const styles = ({ palette, typography, spacing, shadows }: Theme) =>
   createStyles({
     root: {
-      maxWidth: "464px",
-      maxHeight: "319px",
+      maxWidth: spacing(58),
+      maxHeight: spacing(40),
       background: palette.secondary.main,
       borderRadius: "5px",
       boxShadow: shadows[5],

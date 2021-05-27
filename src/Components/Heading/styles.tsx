@@ -4,13 +4,13 @@ export const styles = ({ palette, spacing, typography }: Theme) =>
   createStyles({
     text: {
       fontWeight: typography.fontWeightBold,
-      fontSize: "32px",
+      fontSize: spacing(4),
       textAlign: "justify",
     },
     underline: {
       border: `2px solid ${palette.primary.dark}`,
-      width: "40px",
-      height: "0px",
+      width: spacing(5),
+      height: spacing(0),
       margin: "auto",
       marginTop: spacing(2),
     },

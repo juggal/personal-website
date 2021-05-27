@@ -6,13 +6,13 @@ export const styles = ({ palette, typography, spacing }: Theme) =>
       background: "none",
       border: `4px solid ${palette.primary.dark}`,
       borderRadius: "50px",
-      width: "146px",
-      height: "47px",
+      width: spacing(18),
+      height: spacing(6),
     },
     text: {
       color: palette.text.primary,
       fontWeight: typography.fontWeightMedium,
-      fontSize: "24px",
+      fontSize: spacing(3),
       textAlign: "justify",
     },
   });
