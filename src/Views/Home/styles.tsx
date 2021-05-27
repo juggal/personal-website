@@ -1,15 +1,7 @@
 import { createStyles, Theme } from "@material-ui/core";
 
-export const styles = ({ spacing, transitions }: Theme) =>
+export const styles = ({ spacing, transitions, palette, typography }: Theme) =>
   createStyles({
-    root: {
-      display: "flex",
-      justifyContent: "flex-end",
-      alignItems: "center",
-      flexDirection: "column",
-      width: "100%",
-      height: "100vh",
-    },
     animate: {
       animation: `$moveUpDown 1s ${transitions.easing.sharp} infinite alternate`,
     },
@@ -20,5 +12,21 @@ export const styles = ({ spacing, transitions }: Theme) =>
       "100%": {
         bottom: "0px",
       },
+    },
+    contianer: {
+      height: "100%",
+      width: "100%",
+    },
+    name: {
+      fontWeight: typography.fontWeightBold,
+      color: palette.text.primary,
+      paddingLeft: spacing(2),
+      margin: "0.4em 0 0.4em 0",
+    },
+    summary: {
+      fontWeight: typography.fontWeightRegular,
+      color: palette.text.primary,
+      paddingLeft: spacing(2),
+      margin: "0.4em 0 0 0",
     },
   });
