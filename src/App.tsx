@@ -1,10 +1,18 @@
 import React from "react";
 import { theme } from "./utils";
-import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core";
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+  CssBaseline,
+} from "@material-ui/core";
 import { Main } from "@views/Main";
 
 function App(): JSX.Element {
-  const muiTheme = createMuiTheme(theme);
+  const muiTheme = responsiveFontSizes(createMuiTheme(theme), {
+    disableAlign: true,
+    factor: 4,
+  });
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
