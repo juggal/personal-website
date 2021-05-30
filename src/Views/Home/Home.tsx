@@ -21,10 +21,10 @@ export const Home = withStyles(styles)(
             alignItems="center"
             style={{ height: "90%" }}
           >
-            <Grid item xs={3}>
+            <Grid item xs={6} sm={5} md={3} xl={2}>
               <ProfilePic src={profile} />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={10} md={6} xl={4}>
               <Grid
                 container
                 direction="column"
@@ -32,15 +32,15 @@ export const Home = withStyles(styles)(
                 alignItems="baseline"
                 spacing={0}
               >
-                <Grid item>
+                <Grid item xs={12}>
                   <SocialBar />
                 </Grid>
-                <Grid item>
+                <Grid item xs={12}>
                   <Typography variant="h2" className={classes.name}>
                     I am Nihar Jyoti Das
                   </Typography>
                 </Grid>
-                <Grid item xs={12}>
+                <Grid item xs={12} sm={10} md={12}>
                   <Typography variant="h5" className={classes.summary}>
                     Final year student and freelance software developer with 2
                     year experience in this field
