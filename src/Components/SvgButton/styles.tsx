@@ -1,9 +1,15 @@
 import { Theme, createStyles } from "@material-ui/core";
 
-export const styles = ({ spacing }: Theme) =>
+export const styles = ({ spacing, breakpoints }: Theme) =>
   createStyles({
     root: {
-      width: spacing(8),
-      height: spacing(8),
+      [breakpoints.up("sm")]: {
+        width: spacing(8),
+        height: spacing(8),
+      },
+      [breakpoints.only("xs")]: {
+        width: spacing(4),
+        height: spacing(4),
+      },
     },
   });
