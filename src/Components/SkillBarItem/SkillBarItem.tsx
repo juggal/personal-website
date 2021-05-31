@@ -1,5 +1,10 @@
 import React, { Component, ReactNode } from "react";
-import { LinearProgress, withStyles, WithStyles } from "@material-ui/core";
+import {
+  LinearProgress,
+  Typography,
+  withStyles,
+  WithStyles,
+} from "@material-ui/core";
 import { styles } from "./styles";
 
 interface SkillBarItemProps extends WithStyles<typeof styles> {
@@ -13,7 +18,9 @@ export const SkillBarItem = withStyles(styles)(
       const { label, value, classes } = this.props;
       return (
         <div className={classes.container}>
-          <div className={classes.label}>{label}</div>
+          <Typography variant="h5" className={classes.label}>
+            {label}
+          </Typography>
           <div className={classes.barContainer}>
             <LinearProgress
               color="primary"
@@ -26,7 +33,10 @@ export const SkillBarItem = withStyles(styles)(
               }}
             />
           </div>
-          <div className={classes.progressValue}>{`${Math.round(value)}%`}</div>
+          <Typography
+            variant="h6"
+            className={classes.progressValue}
+          >{`${Math.round(value)}%`}</Typography>
         </div>
       );
     }
