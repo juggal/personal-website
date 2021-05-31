@@ -21,7 +21,7 @@ export const Services = withStyles(styles)(
             container
             justify="center"
             alignItems="center"
-            style={{ height: "10%" }}
+            className={classes.heading}
           >
             <Grid item xs={6} sm={4} md={3} xl={2}>
               <Heading text="Services" />
@@ -31,24 +31,33 @@ export const Services = withStyles(styles)(
             container
             justify="space-evenly"
             alignItems="center"
-            style={{ height: "90%" }}
+            className={classes.content}
           >
-            <Grid item md={10} xl={6} className={classes.svg}>
+            <Grid item lg={6} className={classes.svg}>
               <Art viewBox="0 0 934 384" />
             </Grid>
-            <Grid item xs={10} sm={6} md={5} lg={4} xl={3}>
-              <ServiceCard
-                svg={webdev}
-                title="Web Development"
-                description="Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy"
-              />
-              <br />
-              <br />
-              <ServiceCard
-                svg={appdev}
-                title="Mobile Development"
-                description="Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy"
-              />
+            <Grid item xs={11} lg={4} xl={3}>
+              <Grid
+                container
+                justify="space-evenly"
+                alignItems="center"
+                spacing={3}
+              >
+                <Grid item xs={10} sm={8} md={5} lg={12}>
+                  <ServiceCard
+                    svg={webdev}
+                    title="Web Development"
+                    description="Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy"
+                  />
+                </Grid>
+                <Grid item xs={10} sm={8} md={5} lg={12}>
+                  <ServiceCard
+                    svg={appdev}
+                    title="Mobile Development"
+                    description="Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy"
+                  />
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </div>
