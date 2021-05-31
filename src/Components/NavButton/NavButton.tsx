@@ -1,4 +1,4 @@
-import { Button, WithStyles, withStyles } from "@material-ui/core";
+import { Button, Typography, WithStyles, withStyles } from "@material-ui/core";
 import React, { Component, ReactNode } from "react";
 import { styles } from "./styles";
 
@@ -17,10 +17,12 @@ export const NavButton = withStyles(styles)(
           color={color}
           variant="text"
           size="large"
-          classes={{ textSizeLarge: classes.buttonText }}
+          classes={{ textSizeLarge: classes.button }}
           onClick={onClick}
         >
-          {text}
+          <Typography variant="h4" className={classes.buttonText}>
+            {text}
+          </Typography>
         </Button>
       );
     }
