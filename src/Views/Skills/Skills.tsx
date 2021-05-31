@@ -39,7 +39,7 @@ export const Skills = withStyles(styles)(
             <Grid item md={5} lg={5} xl={4} className={classes.svg}>
               <Art viewBox="0 0 719 360" />
             </Grid>
-            <Grid item xs={12} sm={10} md={6} lg={5} xl={4}>
+            <Grid item xs={11} sm={10} md={6} lg={5} xl={4}>
               <SkillBarList items={skills} />
             </Grid>
           </Grid>
