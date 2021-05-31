@@ -10,6 +10,9 @@ export const styles = ({ palette, zIndex, spacing, breakpoints }: Theme) =>
       [breakpoints.only("sm")]: {
         height: "6%",
       },
+      [breakpoints.only("md")]: {
+        height: "7%",
+      },
       zIndex: zIndex.drawer + 1,
       position: "fixed",
     },
@@ -23,6 +26,9 @@ export const styles = ({ palette, zIndex, spacing, breakpoints }: Theme) =>
       [breakpoints.only("sm")]: {
         width: spacing(25),
       },
+      [breakpoints.only("md")]: {
+        width: spacing(28),
+      },
       background: fade(palette.secondary.main, 0.95),
     },
     drawerContainer: {
@@ -31,6 +37,9 @@ export const styles = ({ palette, zIndex, spacing, breakpoints }: Theme) =>
       },
       [breakpoints.only("sm")]: {
         marginTop: spacing(10),
+      },
+      [breakpoints.only("md")]: {
+        marginTop: spacing(8),
       },
     },
   });
