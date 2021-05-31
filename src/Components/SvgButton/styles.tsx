@@ -8,8 +8,8 @@ export const styles = ({ spacing, breakpoints }: Theme) =>
         height: spacing(8),
       },
       [breakpoints.only("xs")]: {
-        width: spacing(4),
-        height: spacing(4),
+        width: spacing(5),
+        height: spacing(5),
       },
     },
   });
