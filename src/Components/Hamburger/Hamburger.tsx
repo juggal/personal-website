@@ -55,8 +55,6 @@ export const Hamburger = withStyles(styles)(
         !this.myRef.current?.contains(event.target) &&
         this.state.anchor
       ) {
-        console.log("outside click detected!");
-
         this.setState({
           anchor: false,
         });
