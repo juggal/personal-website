@@ -23,7 +23,7 @@ export const styles = ({ palette, zIndex, spacing, breakpoints }: Theme) =>
       [breakpoints.only("sm")]: {
         width: spacing(25),
       },
-      background: fade(palette.secondary.main, 0.5),
+      background: fade(palette.secondary.main, 0.95),
     },
     drawerContainer: {
       [breakpoints.only("xs")]: {
