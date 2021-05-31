@@ -7,17 +7,23 @@ export const styles = ({ breakpoints, spacing }: Theme) =>
       width: "100%",
     },
     svg: {
-      [breakpoints.down("md")]: {
+      [breakpoints.down("sm")]: {
         display: "none",
       },
     },
     heading: {
       height: "10%",
       [breakpoints.only("xs")]: {
-        marginBottom: spacing(10),
+        marginBottom: spacing(3),
       },
     },
     content: {
       height: "90%",
+    },
+
+    cardSpacing: {
+      "& > div:not(:last-child)": {
+        marginBottom: spacing(3),
+      },
     },
   });

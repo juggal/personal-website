@@ -33,24 +33,25 @@ export const Services = withStyles(styles)(
             alignItems="center"
             className={classes.content}
           >
-            <Grid item lg={6} className={classes.svg}>
+            <Grid item md={6} lg={6} xl={5} className={classes.svg}>
               <Art viewBox="0 0 934 384" />
             </Grid>
-            <Grid item xs={11} lg={4} xl={3}>
+            <Grid item xs={12} md={6} lg={5} xl={3}>
               <Grid
                 container
+                direction="column"
                 justify="space-evenly"
                 alignItems="center"
-                spacing={3}
+                className={classes.cardSpacing}
               >
-                <Grid item xs={10} sm={8} md={5} lg={12}>
+                <Grid item xs={10} sm={7} md={8} lg={9} xl={10}>
                   <ServiceCard
                     svg={webdev}
                     title="Web Development"
                     description="Lorem Ipsum is simply dummy text of the printing typesetting industry. simply dummy"
                   />
                 </Grid>
-                <Grid item xs={10} sm={8} md={5} lg={12}>
+                <Grid item xs={10} sm={7} md={8} lg={9} xl={10}>
                   <ServiceCard
                     svg={appdev}
                     title="Mobile Development"
