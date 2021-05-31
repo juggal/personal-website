@@ -8,7 +8,7 @@ export const styles = ({ palette, zIndex, spacing, breakpoints }: Theme) =>
         height: "8%",
       },
       [breakpoints.only("sm")]: {
-        height: "6%",
+        height: "8%",
       },
       zIndex: zIndex.drawer + 1,
       position: "fixed",
