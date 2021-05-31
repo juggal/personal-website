@@ -5,6 +5,7 @@ import {
   CardContent,
   CardMedia,
   SvgIcon,
+  Typography,
   withStyles,
   WithStyles,
 } from "@material-ui/core";
@@ -31,8 +32,8 @@ export const ServiceCard = withStyles(styles)(
               />
             </CardMedia>
             <CardContent className={classes.content}>
-              <span>{title}</span>
-              <p>{description}</p>
+              <Typography variant="h5">{title}</Typography>
+              <Typography variant="body1">{description}</Typography>
             </CardContent>
           </CardActionArea>
         </Card>

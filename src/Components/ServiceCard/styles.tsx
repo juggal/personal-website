@@ -18,11 +18,10 @@ export const styles = ({ palette, typography, spacing, shadows }: Theme) =>
     },
     content: {
       color: palette.text.primary,
-      fontSize: spacing(3),
-      "& span": {
+      "& h5": {
         fontWeight: typography.fontWeightBold,
       },
-      "& p": {
+      "& h6": {
         fontWeight: typography.fontWeightRegular,
       },
     },
