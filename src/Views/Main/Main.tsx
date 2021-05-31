@@ -3,6 +3,7 @@ import { withStyles, WithStyles } from "@material-ui/core";
 import { styles } from "./styles";
 import { Navbar } from "@components/Navbar";
 import { Home } from "@views/Home";
+import { Hamburger } from "@components/Hamburger";
 
 interface MainProps extends WithStyles<typeof styles> {}
 
@@ -14,6 +15,9 @@ export const Main = withStyles(styles)(
         <div className={classes.root}>
           <div className={classes.navbar}>
             <Navbar />
+          </div>
+          <div className={classes.hamburger}>
+            <Hamburger />
           </div>
           <div className={classes.view}>
             <Home />
