@@ -6,10 +6,10 @@ export const styles = ({ breakpoints }: Theme) =>
       height: "100vh",
     },
     navbar: {
-      [breakpoints.down("sm")]: {
+      [breakpoints.down("md")]: {
         display: "none",
       },
-      [breakpoints.up("md")]: {
+      [breakpoints.up("lg")]: {
         display: "block",
         height: "8%",
       },
@@ -23,7 +23,11 @@ export const styles = ({ breakpoints }: Theme) =>
         display: "block",
         height: "6%",
       },
-      [breakpoints.up("md")]: {
+      [breakpoints.only("md")]: {
+        display: "block",
+        height: "7%",
+      },
+      [breakpoints.up("lg")]: {
         display: "none",
       },
     },
@@ -35,7 +39,7 @@ export const styles = ({ breakpoints }: Theme) =>
         height: "94%",
       },
       [breakpoints.up("md")]: {
-        height: "92%",
+        height: "93%",
       },
     },
   });

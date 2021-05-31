@@ -5,6 +5,7 @@ import { Navbar } from "@components/Navbar";
 import { Home } from "@views/Home";
 import { Services } from "@views/Services";
 import { Hamburger } from "@components/Hamburger";
+import { Skills } from "@views/Skills";
 
 interface MainProps extends WithStyles<typeof styles> {}
 
@@ -24,6 +25,8 @@ export const Main = withStyles(styles)(
             <Home />
             <Divider variant="middle" light />
             <Services />
+            <Divider variant="middle" light />
+            <Skills />
             <Divider variant="middle" light />
           </div>
         </div>
