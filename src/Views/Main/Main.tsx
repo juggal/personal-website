@@ -6,6 +6,7 @@ import { Home } from "@views/Home";
 import { Services } from "@views/Services";
 import { Hamburger } from "@components/Hamburger";
 import { Skills } from "@views/Skills";
+import { About } from "@views/About";
 
 interface MainProps extends WithStyles<typeof styles> {}
 
@@ -27,6 +28,8 @@ export const Main = withStyles(styles)(
             <Services />
             <Divider variant="middle" light />
             <Skills />
+            <Divider variant="middle" light />
+            <About />
             <Divider variant="middle" light />
           </div>
         </div>
