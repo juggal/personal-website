@@ -1,4 +1,4 @@
-import { Button, withStyles, WithStyles } from "@material-ui/core";
+import { Button, Typography, withStyles, WithStyles } from "@material-ui/core";
 import React, { Component, ReactNode } from "react";
 import { styles } from "./styles";
 
@@ -27,7 +27,9 @@ export const TextButton = withStyles(styles)(
             target="_blank"
             className={classes.button}
           >
-            <span className={classes.text}>{text}</span>
+            <Typography variant="h5" className={classes.text}>
+              {text}
+            </Typography>
           </Button>
         );
       }
