@@ -57,7 +57,11 @@ export const About = withStyles(styles)(
             className={classes.button}
           >
             <Grid item xs={10} md={8} xl={6}>
-              <TextButton text="Resume" type="download" link="" />
+              <TextButton
+                text="Resume"
+                type="download"
+                link="https://drive.google.com/file/d/1MSqUrknIaNP9qw4DznF8JfNrjXRjKp4n/view?usp=sharing"
+              />
             </Grid>
           </Grid>
         </div>
