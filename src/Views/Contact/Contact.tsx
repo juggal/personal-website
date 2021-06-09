@@ -4,7 +4,6 @@ import { styles } from "./styles";
 import { Heading } from "@components/Heading";
 import { SocialBar } from "@components/SocialBar";
 import { InputField } from "@components/InputField";
-import { Footer } from "@components/Footer";
 import { TextButton } from "@components/TextButton";
 
 interface ContactProps extends WithStyles<typeof styles> {}
