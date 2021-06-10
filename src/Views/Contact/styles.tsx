@@ -12,12 +12,12 @@ export const styles = ({ breakpoints, spacing }: Theme) =>
     content: {
       height: "90%",
       [breakpoints.only("xs")]: {
-        paddingTop: spacing(5),
+        paddingTop: spacing(3),
       },
     },
     form: {
       [breakpoints.only("xs")]: {
-        padding: spacing(2),
+        padding: spacing(3),
       },
     },
   });
