@@ -8,6 +8,7 @@ import { Hamburger } from "@components/Hamburger";
 import { Skills } from "@views/Skills";
 import { About } from "@views/About";
 import { Contact } from "@views/Contact";
+import { Footer } from "@components/Footer";
 
 interface MainProps extends WithStyles<typeof styles> {}
 
@@ -33,6 +34,7 @@ export const Main = withStyles(styles)(
             <About />
             <Divider variant="middle" light />
             <Contact />
+            <Footer text="© 2021 niharjyotidas.tech - All Rights Reserved." />
           </div>
         </div>
       );
