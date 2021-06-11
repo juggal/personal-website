@@ -13,7 +13,7 @@ export const Contact = withStyles(styles)(
     render(): ReactNode {
       const { classes } = this.props;
       return (
-        <div className={classes.container}>
+        <div id="contact" className={classes.container}>
           <Grid
             container
             justify="center"

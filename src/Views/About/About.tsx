@@ -11,7 +11,7 @@ export const About = withStyles(styles)(
     render(): ReactNode {
       const { classes } = this.props;
       return (
-        <div className={classes.container}>
+        <div id="about" className={classes.container}>
           <Grid
             container
             justify="center"
