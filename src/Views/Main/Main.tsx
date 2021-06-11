@@ -29,9 +29,9 @@ export const Main = withStyles(styles)(
             <Divider variant="middle" light />
             <Services />
             <Divider variant="middle" light />
-            <Skills />
-            <Divider variant="middle" light />
             <About />
+            <Divider variant="middle" light />
+            <Skills />
             <Divider variant="middle" light />
             <Contact />
             <Footer text="© 2021 niharjyotidas.tech - All Rights Reserved." />
