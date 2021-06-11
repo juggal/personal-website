@@ -12,6 +12,7 @@ import {
 import { Menu } from "@material-ui/icons";
 import { styles } from "./styles";
 import { NavButton } from "@components/NavButton";
+import { Link } from "react-scroll";
 
 interface HamburgerProps extends WithStyles<typeof styles> {}
 interface NavbarState {
@@ -94,39 +95,79 @@ export const Hamburger = withStyles(styles)(
             <div className={classes.drawerContainer}>
               <List>
                 <ListItem>
-                  <NavButton
-                    text="Home"
-                    color={this.changeColor(0) ? "primary" : "default"}
-                    onClick={() => this.handleClick(0)}
-                  />
+                  <Link
+                    to="home"
+                    activeClass="activeClass"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                  >
+                    <NavButton
+                      text="Home"
+                      color={this.changeColor(0) ? "primary" : "default"}
+                      onClick={() => this.handleClick(0)}
+                    />
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <NavButton
-                    text="Services"
-                    color={this.changeColor(1) ? "primary" : "default"}
-                    onClick={() => this.handleClick(1)}
-                  />
+                  <Link
+                    to="services"
+                    activeClass="activeClass"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                  >
+                    <NavButton
+                      text="Services"
+                      color={this.changeColor(1) ? "primary" : "default"}
+                      onClick={() => this.handleClick(1)}
+                    />
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <NavButton
-                    text="About"
-                    color={this.changeColor(2) ? "primary" : "default"}
-                    onClick={() => this.handleClick(2)}
-                  />
+                  <Link
+                    to="about"
+                    activeClass="activeClass"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                  >
+                    <NavButton
+                      text="About"
+                      color={this.changeColor(2) ? "primary" : "default"}
+                      onClick={() => this.handleClick(2)}
+                    />
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <NavButton
-                    text="Skills"
-                    color={this.changeColor(3) ? "primary" : "default"}
-                    onClick={() => this.handleClick(3)}
-                  />
+                  <Link
+                    to="skills"
+                    activeClass="activeClass"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                  >
+                    <NavButton
+                      text="Skills"
+                      color={this.changeColor(3) ? "primary" : "default"}
+                      onClick={() => this.handleClick(3)}
+                    />
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <NavButton
-                    text="Contact"
-                    color={this.changeColor(4) ? "primary" : "default"}
-                    onClick={() => this.handleClick(4)}
-                  />
+                  <Link
+                    to="contact"
+                    activeClass="activeClass"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                  >
+                    <NavButton
+                      text="Contact"
+                      color={this.changeColor(4) ? "primary" : "default"}
+                      onClick={() => this.handleClick(4)}
+                    />
+                  </Link>
                 </ListItem>
               </List>
             </div>
